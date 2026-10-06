@@ -57,9 +57,12 @@ const linkClass = ({ isActive }) =>
     <h2 className='text-white text-sm'>عدسة</h2>
     <p className='text-xs text-amber-600 hidden sm:block'>عالم التصوير الفوتوغرافي</p>
   </div>
+<Link to={"/"} className='flex items-center gap-2'>
   <div className='w-8 sm:w-10 shrink-0'>
-    <img className='w-full' src={logoImg} alt="logoImg" />
+    <img className='w-full hover:scale-110 transition-all duration-200 cursor-pointer' src={logoImg} alt="logoImg" />
   </div>
+
+</Link>
 </div>
       </div>
 

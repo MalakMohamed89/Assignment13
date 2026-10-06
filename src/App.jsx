@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import {
   BrowserRouter,
-  createHashRouter,
+  createBrowserRouter,
 RouterProvider
 } from "react-router";
 import './App.css'
@@ -17,7 +17,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import TermsOfService from './Pages/TermsOfService/TermsOfService';
 import { cardsData } from './data/blogData';
-const routers=createHashRouter([{
+const routers=createBrowserRouter([{
 
   path : "/" ,  element : <Layout />,
   children :[
